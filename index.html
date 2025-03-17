@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" 
+        content="width=device-width, 
+                 initial-scale=1.0, 
+                 maximum-scale=1.0, 
+                 user-scalable=no, 
+                 viewport-fit=cover" />
+  <title>Huggies</title>
+  <link rel="icon" 
+        href="https://s3.amazonaws.com/botgen/Uploads/huggies_1742220920.png" 
+        type="image/png">
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- ESCENA 1 - Intro (video con audio) -->
+    <div class="escena active" id="escena1">
+      <video id="introVideo" autoplay loop playsinline>
+        <source src="https://s3.amazonaws.com/botgen/Uploads/principal_1738754751.mp4" type="video/mp4">
+      </video>
+      <!-- Botón para pasar a la Escena 2 -->
+      <button class="btn-experiencia" id="btnIniciar">Empezar viaje</button>
+    </div>
+
+    <!-- ESCENA 2 - Menú principal (imagen de fondo) -->
+    <div class="escena" id="escena2">
+      <div class="grid-botones">
+        <button class="grid-btn" data-target="ventajas">Mayor suavidad Pañal Dermacare</button>
+        <button class="grid-btn" data-target="funcionalidades">Mayor Absorción Pañal Active Sec</button>
+        <button class="grid-btn" data-target="estiloVida">Sensación Unica Toallitas húmedas</button>
+        <button class="grid-btn" data-target="receta">Limpieza Superior Tollitas húmedas</button>
+      </div>
+    </div>
+
+    <!-- ESCENA 3 - Mayor suavidad Pañal Dermacare -->
+    <div class="escena" id="ventajas">
+      <video id="videoVentajas" playsinline>
+        <source src="https://s3.amazonaws.com/botgen/Uploads/suavidaderma_1742221584.mp4" type="video/mp4">
+      </video>
+      <div class="overlay-content">
+        <h2>Mayor suavidad Pañal Dermacare</h2>
+        <!-- Botón "Volver" para regresar al menú (Escena 2) -->
+        <button class="btn-volver">Volver</button>
+
+      </div>
+    </div>
+
+    <!-- ESCENA 4 - Mayor Absorción Pañal Active Sec -->
+    <div class="escena" id="funcionalidades">
+      <video id="videoFuncionalidades" playsinline>
+        <source src="https://s3.amazonaws.com/botgen/Uploads/mayorabsorcion_1742221808.mp4" type="video/mp4">
+      </video>
+      <div class="overlay-content">
+        <h2>Mayor Absorción Pañal Active Sec</h2>
+        <button class="btn-volver">Volver</button>
+      </div>
+    </div>
+
+    <!-- ESCENA 5 - Sensación Unica Toallitas húmedas -->
+    <div class="escena" id="estiloVida">
+      <video id="videoEstiloVida" playsinline>
+        <source src="https://s3.amazonaws.com/botgen/Uploads/sensacionhumeda_1742221887.mp4" type="video/mp4">
+      </video>
+      <!-- overlay-content2 para este layout específico -->
+      <div class="overlay-content">
+        <h2>Sensación Unica Toallitas húmedas</h2>
+        <button class="btn-volver">Volver</button>
+      </div>
+    </div>
+
+    <!-- ESCENA 6 - Limpieza Superior Tollitas húmedas -->
+    <div class="escena" id="receta">
+      <video id="videoReceta" playsinline>
+        <source src="https://s3.amazonaws.com/botgen/Uploads/limpiezahumeda_1742221943.mp4" type="video/mp4">
+      </video>
+      <div class="overlay-content">
+        <h2>Limpieza Superior Tollitas húmedas</h2>
+        <button class="btn-volver">Volver</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Script principal -->
+  <script src="main.js"></script>
+</body>
+</html>
