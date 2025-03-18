@@ -11,7 +11,7 @@ const SCENE_INACTIVITY_LIMITS = {
   ventajas: 30000,  // Ventajas: 30s
   funcionalidades: 17000, // Funcionalidades: 17s
   estiloVida: 15000,// Estilo de vida: 16s
-  receta: 14000     // Receta: 14s
+  receta: 12900     // Receta: 13s
 };
 
 // 2. Variables globales
@@ -64,7 +64,6 @@ function switchScene(from, to) {
 function pauseAllVideos() {
   document.querySelectorAll('video').forEach(video => {
     video.pause();
-    video.currentTime = 0;
   });
 }
 
