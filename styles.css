@@ -58,8 +58,8 @@ video {
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 15px 30px;
-  font-size: 1.3rem;
+  padding: 20px 30px;
+  font-size: 1.5rem;
   background: rgba(220, 20, 44, 1);
   color: #fff;
   border: none;
@@ -67,6 +67,17 @@ video {
   cursor: pointer;
   z-index: 2;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.btn-experiencia:hover {
+  background: rgba(248, 38, 63, 1);
+  transform: translate(-50%, -50%) scale(1.05);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.grid-btn:hover {
+  background: rgba(248, 38, 63, 1);
+  transform: scale(1.05);
 }
 
 /* ESCENA 2 - Menú de 4 botones con imagen de fondo */
@@ -87,7 +98,8 @@ video {
 }
 
 .grid-btn {
-  padding: 15px;
+  padding: 20px;
+  font-size: 1.5rem;
   background: rgba(220, 20, 44, 1);
   color: #fff;
   border: none;
@@ -95,9 +107,11 @@ video {
   font-size: 1.1rem;
   cursor: pointer;
   transition: background 0.3s;
+  width: calc(100% - 20px);
 }
 .grid-btn:hover {
   background: rgba(248, 38, 63, 1);
+  transform: scale(1.05);
 }
 
 /* Overlay para textos de cada escena*/
@@ -117,7 +131,7 @@ video {
 
 .overlay-content h2 {
   margin-bottom: 15px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
 
